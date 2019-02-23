@@ -1,0 +1,134 @@
+ 
+Desarrollo de Software// Desarrollo Móvil
+
+
+Ceballos Murrieta Perla Lizbet
+González Pino Kaem
+Montero Muñiz Monserrat 
+Sedeño Moto José Jhair
+Sanchez Juan Cerbando
+
+->INDICE
+Introducción
+Requerimientos Funcionales
+Prototipo WEB
+Casos de uso (falta realizar diagrama)
+Descripción de Casos de Uso
+CU_01 Iniciar Sesión.
+CU_04 Eliminar foto
+CU_05 Modificar foto
+Diagramas de Secuencia
+
+Introducción
+En este documento se describirán detalladamente nuestro proyecto de una galería de imágenes.
+Requerimientos Funcionales
+1.	Un administrador puede CRUD de usuarios y plantas.
+2.	Un usuario puede CRUD de registro de plantas.
+3.	Un invitado puede ver todos las plantas.
+Plantas 
+1.	Nombre
+2.	Nombre científico
+3.	Categoría
+4.	Descripción
+5.	Propiedades
+6.	Usos
+7.	Contraindicaciones
+8.	Referencias
+
+Prototipo WEB
+Iniciar sesión Usuario / Administrador
+Registrar Usuario
+Plantalla del Administrador (falta realizar mockup)
+Pantalla Principal Galeria Plantas
+Subir imagen
+Modificar Foto(falta realizar mockup)
+Eliminar Foto(falta realizar mockup)
+Ver foto
+
+Prototipo MÓVIL
+Plantas Medicinales
+Plantas Carnívoras
+ 
+Casos de uso (falta realizar diagrama)
+ 
+Descripción de Casos de Uso
+CU_01 Iniciar Sesión.
+Sistema	Galería de imágenes
+Caso de uso	CU_01 IniciarSesion
+Actores	Usuario, sistema
+Descripción	El usuario deberán de ingresar su  y una contraseña para poder acceder al sistema
+Prioridad	Indispensable
+Flujo Básico:
+1.- El usuario ingresara al sistema un correo  y una contraseña. Presiona el botón de entrar.
+2.- El sistema valida que el correo y la contraseña sean correctos y lo re direccionará a la página principal
+Flujo Alterno:
+1.- El sistema Valida que los datos no se encuentran registrados en el sistema y manda un mensaje de “Error el usuario no se ha encontrado”.
+2.- El usuario se deberá registrar los datos correctamente.
+3.- Si el usuario no se encuentra deberá registrarse.
+CU_02 Registrar Usuarios
+Sistema	Galería de imágenes
+Caso de uso	CU_02 Registrar usuario.
+Actores	Usuario, sistema
+Descripción	El sistema permitirá al usuario registrarse. El usuario deberá ingresar los datos que el sistema requiera para así poder registrarse correctamente.
+Prioridad	Indispensable
+Flujo Básico:
+1.- El usuario ingresa a la página de login. da clic en Registrarse
+2.- El sistema muestra una página de registro.
+3.-El usuario ingresa los datos correspondientes para registrarse y presiona el botón de registrar.
+4.-El sistema verifica que el usuario no se encuentre en la base de datos, valida los campos de texto. El sistema manda un mensaje de éxito y muestra la pantalla para iniciar sesión
+Flujo Alterno 1: 
+1.- El usuario no ingresa en los campos correspondientes los datos requeridos por el sistema y  presiona el botón de registrar.
+2.- El sistema verifica los datos ingresados y muestra un mensaje de error.
+Flujo Alterno 2: 
+1.- El usuario ingresa en los campos correspondientes los datos requeridos por el sistema y  presiona el botón de registrar.
+2.- El sistema verifica los datos ingresados y muestra un mensaje de error donde dice que el usuario ya es existente.
+3.- El usuario da clic en aceptar e ingresa un nuevo usuario.
+CU_03 Subir foto o imagen
+Sistema	Galería de imágenes
+Caso de uso	CU_03 Subir foto
+Actores	Usuario
+Descripción	Los usuarios podrán subir una fotografía o imagen a su galería.
+Prioridad	Indispensable
+Flujo Básico:
+1.- El usuario entrara a su galería.
+2.- El usuario pulsara el botón de subir imagen.
+3.- El usuario llena los campos requeridos y seleccionará la imagen a subir. Da clic en guardar.
+4.- El sistema validará los datos y la imagen. Estos se mostrarán en la galería.
+Flujo Alterno:
+1.- El usuario entrara a su galería.
+2.- El usuario pulsara el botón de subir imagen.
+3.- El usuario no selecciona una imagen .jpg o .png 
+4.- El sistema valida la imagen y muestra un mensaje de error la imagen es un formato inválido.
+CU_04 Eliminar foto
+Sistema	Galería de imágenes
+Caso de uso	CU_04 Eliminar foto 
+Actores	Usuario
+Descripción	Los usuarios podrán subir una fotografía o imagen a su galería.
+Prioridad	Indispensable
+Flujo Básico:
+1.- El usuario entrara a su galería.
+2.- El usuario selecciona la imagen, da clic en eliminar.
+3.- El sistema deberá realizar los cambios y actualizar
+Flujo Alterno:
+1.- El usuario entrara a su galería.
+2.- El usuario seleccionara la imagen que borrara.
+3.- La imagen debe estar en la galería para poder ser eliminada.
+CU_05 Modificar foto
+Sistema	Galería de imágenes
+Caso de uso	CU_05 Modificar foto
+Actores	Usuario
+Descripción	Los usuarios podrán subir una fotografía o imagen a su galería.
+Prioridad	Indispensable
+Flujo Básico:
+1.- El usuario entrara a su galería.
+2.- El usuario dará clic en la imagen a modificar y cambiará la información.
+3.- El sistema validará los datos ingresados por el usuario.
+4.- El sistema mostrará los cambios actualizados.
+Flujo Alterno:
+1.- El usuario entrara a su galería.
+2.- El usuario dará clic en la imagen a modificar y cambiará la información.
+3.-  El sistema validará los datos ingresados por el usuario..
+4.- Si los datos ingresados no son correctos mostrará un mensaje de error datos inválidos.
+Diagramas de Robustez (FALTA)
+Diagramas de Secuencia 
+ 
